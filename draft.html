@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>La Cocina de El Sol | Draft</title>
+    <style>
+        /* Family colors and shared page styles. */
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; background: #fff9ec; color: #292b24; font: 18px/1.7 Arial, sans-serif; }
+        header, footer { background: #244d37; color: white; text-align: center; padding: 28px 20px; }
+        h1, h2, h3 { font-family: Georgia, serif; line-height: 1.2; }
+        h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 12px 0; }
+        h2 { color: #244d37; font-size: 2.2rem; }
+        h3 { color: #a83124; }
+        .sun { color: #efb52c; width: 130px; height: 75px; }
+        /* Navigation wraps for phones; English labels remain visible. */
+        nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 16px; border-bottom: 3px solid #efb52c; }
+        nav a { text-align: center; padding: 8px 16px; text-decoration: none; font-weight: bold; }
+        nav small { display: block; font-weight: normal; }
+        a { color: #244d37; }
+        a:hover { text-decoration: underline; }
+        a:focus-visible, summary:focus-visible { outline: 3px solid #a83124; outline-offset: 4px; }
+        main { max-width: 1060px; margin: auto; padding: 24px; }
+        section { padding: 28px 0; }
+        .hero, .recipe-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+        .hero { align-items: center; }
+        .hero h2 { font-size: clamp(2.8rem, 6vw, 4rem); margin: 12px 0; }
+        .eyebrow { color: #a83124; font-weight: bold; }
+        .button { display: inline-block; background: #a83124; color: white; padding: 12px 24px; border-radius: 5px; text-decoration: none; }
+        .photo-placeholder { background: #f4e7c5; border: 2px dashed #8d7951; border-radius: 12px; padding: 40px; min-height: 280px; display: grid; place-content: center; text-align: center; }
+        li { margin-bottom: 12px; }
+        ol li::marker { color: #a83124; font-weight: bold; }
+        details { border-top: 1px solid #cabd9c; padding: 16px 0; }
+        summary { cursor: pointer; font-weight: bold; color: #244d37; }
+        .story { max-width: 760px; }
+        /* Keep the content readable on small screens and honor reduced motion. */
+        @media (max-width: 700px) { .hero, .recipe-layout { grid-template-columns: 1fr; gap: 20px; } }
+        @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    </style>
+</head>
+<body>
+    <!-- Family half-sun graphic. -->
+    <header id="home">
+        <svg class="sun" viewBox="0 0 130 75" aria-hidden="true">
+            <path d="M30 70 A35 35 0 0 1 100 70 Z" fill="currentColor"/>
+            <path d="M65 5 V23 M22 18 L35 32 M108 18 L95 32 M5 50 L23 56 M125 50 L107 56" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <h1>La Cocina de El Sol</h1>
+        <p>A Mexican Family Recipe with a Texas Story</p>
+    </header>
+    <!-- Menu links jump directly to sections of this single webpage. -->
+    <nav aria-label="Main navigation">
+        <a href="#home">Home<small>Welcome</small></a>
+        <a href="#recipe">A Cocinar!<small>Let's Cook</small></a>
+        <a href="#shopping">El Mercado<small>Shopping List</small></a>
+        <a href="#story">De Nuestra Mesa<small>From Our Table</small></a>
+    </nav>
+    <main>
+        <section class="hero" aria-labelledby="dish-title">
+            <div>
+                <p class="eyebrow">From our family kitchen</p>
+                <h2 id="dish-title">Chiles Rellenos</h2>
+                <p>For me, chiles rellenos mean comfort, celebration, and family. Preparing them gave me time in the kitchen with my mother, learning the recipe and the traditions that came with it. This is our family's version, filled with ground beef and cheddar cheese.</p>
+                <a class="button" href="#recipe">Let's get cooking</a>
+            </div>
+            <!-- Replace with the finished-dish photograph and descriptive alt text. -->
+            <div class="photo-placeholder"><h3>A taste of home</h3><p>Finished-dish photograph coming soon.</p></div>
+        </section>
+        <section id="recipe">
+            <h2>A Cocinar! · Let's Cook</h2>
+            <p>Makes 6 stuffed poblano peppers. Flour is used to seal the openings only.</p>
+            <div class="recipe-layout">
+                <div>
+                    <h3>Ingredients</h3>
+                    <ul>
+                <li>6 poblano peppers</li>
+                <li>1 pound ground beef</li>
+                <li>12 ounces cheddar cheese</li>
+                <li>2 garlic cloves</li>
+                <li>Approximately ½ tablespoon each salt, black pepper, and cumin, adjusted to taste</li>
+                <li>12 eggs, separated</li>
+                <li>¼ cup flour for sealing only</li>
+                <li>One 16-ounce block manteca (lard); Snow Cap preferred</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Step by step</h3>
+                    <ol>
+                <li>Roast the poblano peppers until the skin is blistered, being careful not to over-roast them.</li>
+                <li>Place the roasted peppers in a produce bag with a small amount of salt and water. Close the bag and allow the peppers to steam until the skins loosen.</li>
+                <li>Remove the peppers from the bag and gently scrape away the loosened skin with a spoon.</li>
+                <li>Carefully make an opening in each pepper and remove the seeds without tearing the pepper. Set the cleaned peppers aside.</li>
+                <li>Season the ground beef with garlic, salt, black pepper, and cumin and cook until the beef is completely browned. Drain the cooked beef in a colander and set it aside.</li>
+                <li>Cut the cheddar cheese into small rectangular pieces that will fit inside the poblano peppers.</li>
+                <li>Set aside a small amount of flour to use for sealing the stuffed peppers.</li>
+                <li>Hold one poblano pepper in the palm of your hand and carefully fill it with the cooked ground beef and one or two pieces of cheddar cheese.</li>
+                <li>Dip your finger into the flour and lightly apply it to one side of the opening in the pepper. Press the other side against the flour to help seal the opening. Repeat with the 	remaining peppers and set them aside.</li>
+                <li>Separate 12 eggs, placing the egg whites into a large mixing bowl and keeping the yolks separate. Be careful not to get any shells or pieces of egg membrane in the whites.</li>
+                <li>Beat the egg whites until stiff peaks form. The egg whites should be firm enough that they remain in the bowl when it is carefully turned upside down.</li>
+                <li>Gently fold the egg yolks into the beaten egg whites without deflating the mixture.</li>
+                <li>Heat the manteca in a large pan until it is ready for frying.</li>
+                <li>Coat each stuffed pepper completely in the egg mixture.</li>
+                <li>Carefully place each coated pepper into the hot manteca and fry until the outside is golden brown, turning as needed so that it cooks evenly.</li>
+                <li>Remove the finished chiles rellenos from the pan and allow the excess manteca to drain.</li>
+                    </ol>
+                    <!-- Expandable tips use native HTML controls, with no JavaScript needed. -->
+                    <details><summary>Kitchen tip: blister, don't over-roast</summary><p>Keep the pepper intact enough to fill. Use a spoon gently when peeling and opening it.</p></details>
+                    <details><summary>Kitchen tip: stiff peaks</summary><p>When you lift the beaters, the egg whites form peaks that hold their shape instead of folding over. A demonstration video can be added here.</p></details>
+                    <details><summary>Family tradition: ojo pesado</summary><p>My mother and grandmother taught me about ojo pesado, or a heavy gaze: the belief that someone watching too closely could make the egg batter collapse. It is part of our family's cooking story.</p></details>
+                </div>
+            </div>
+        </section>
+        <section id="shopping">
+            <h2>El Mercado · Shopping List</h2>
+            <p>Check your pantry before heading to the store.</p>
+            <ul>
+                <li>6 poblano peppers</li>
+                <li>1 pound ground beef</li>
+                <li>12 ounces cheddar cheese</li>
+                <li>2 garlic cloves</li>
+                <li>Approximately ½ tablespoon each salt, black pepper, and cumin, adjusted to taste</li>
+                <li>12 eggs, separated</li>
+                <li>¼ cup flour for sealing only</li>
+                <li>One 16-ounce block manteca (lard); Snow Cap preferred</li>
+            </ul>
+        </section>
+        <section id="story" class="story">
+            <h2>De Nuestra Mesa · From Our Table</h2>
+            <p>Chiles Rellenos is a fairly common Mexican dish, but my family has made some adjustments throughout the years.  I chose this recipe primarily because it has both personal and cultural significance to me.  Growing up in a family of seven, meat was not always something we could afford to have except on rare occasions, which made chiles rellenos feel like a special, luxurious meal.  The combination of meat, cheese, time and skill involved in preparing this dish has made it into something that I associate with comfort, celebration and family.  </p>
+            <p>As the eldest of five children, one-on-one time with my mother was not always available. Preparing chiles rellenos was different because the dish is labor intensive and required us to spend a significant amount of time together in the kitchen. Even in a sweltering Texas Panhandle kitchen, what I remember most is having her full attention.</p>
+            <p>I want my daughter, my granddaughters, and my daughter-in-law to be able to make this recipe long after I am no longer standing in the kitchen to show them how. My hope is that this website preserves how we make them and a little of why they matter.</p>
+            <!-- Family photographs can be added here later. -->
+            <a href="#home">Back to the top</a>
+        </section>
+    </main>
+    <footer>La Cocina de El Sol · Eva Sullivan · Website draft</footer>
+</body>
+</html>
