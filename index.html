@@ -37,11 +37,11 @@
         }
 		/* Heading colors */
 		h1  {
-    color: #a83124;
-    text-align: center;
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-}
+    	color: #a83124;
+    	text-align: center;
+    	font-family: Georgia, "Times New Roman", serif;
+    	font-style: italic;
+		}
 		h2 {
     		color: #244d37;
 		}
@@ -56,168 +56,163 @@
     		text-decoration: underline;
 		}
 		/* Make the rays gently grow and shrink */
-.sun-rays {
-    transform-origin: 65px 70px;
-    animation: undulate 2s ease-in-out infinite alternate;
-}
+		.sun-rays {
+    	transform-origin: 65px 70px;
+    	animation: undulate 2s ease-in-out infinite alternate;
+		}
 
-@keyframes undulate {
-    from {
+		@keyframes undulate {
+    	from {
         transform: scale(0.92);
-    }
-    to {
+    	}
+    	to {
         transform: scale(1.04);
-    }
-}
+    	}
+		}
 
-/* Respect visitors who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-    .sun-rays {
+		/* Respect visitors who prefer reduced motion */
+		@media (prefers-reduced-motion: reduce) {
+    	.sun-rays {
         animation: none;
-    }
-}
+    	}
+		}
 		/* Green banner with a centered sun */
-header {
-    background-color: #244d37;
-    text-align: center;
-    padding: 25px 0;
-}
+		header {
+    	background-color: #244d37;
+    	text-align: center;
+    	padding: 25px 0;
+		}
 		/* Center photos and keep them within the screen */
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 20px auto;
-}
+		img {
+    	display: block;
+    	max-width: 100%;
+    	height: auto;
+    	margin: 20px auto;
+		}
 		/* Make expandable tip labels look clickable */
-summary {
-    cursor: pointer;
-    color: #244d37;
-    font-weight: bold;
-}
+		summary {
+    	cursor: pointer;
+    	color: #244d37;
+    	font-weight: bold;
+		}
 		.intro {
-    max-width: 700px;
-    margin: 20px auto;
-}
-    </style>
-</head>
+    	max-width: 700px;
+    	margin: 20px auto;
+		}
+    	</style>
+		</head>
 
-<body>
-	<!-- Family half-sun graphic -->
-	<header>
-<svg width="130" height="75" viewBox="0 0 130 75" aria-hidden="true">
-    <path d="M30 70 A35 35 0 0 1 100 70 Z" fill="#efb52c" />
+		<body>
+		<!-- Family half-sun graphic -->
+		<header>
+		<svg width="130" height="75" viewBox="0 0 130 75" aria-hidden="true">
+    	<path d="M30 70 A35 35 0 0 1 100 70 Z" fill="#efb52c" />
 	    <!-- Sun rays -->
-    <path class="sun-rays"
-          d="M65 8 V23 M22 18 L35 32 M108 18 L95 32 M5 50 L23 56 M125 50 L107 56"
-          fill="none"
-          stroke="#efb52c"
-          stroke-width="5"
-          stroke-linecap="round" />
-</svg>
-</header>
-<h1 id="home">La Cocina de El Sol</h1>
+    	<path class="sun-rays"
+        d="M65 8 V23 M22 18 L35 32 M108 18 L95 32 M5 50 L23 56 M125 50 L107 56"
+    	fill="none"
+        stroke="#efb52c"
+        stroke-width="5"
+        stroke-linecap="round" />
+		</svg>
+		</header>
+		<h1 id="home">La Cocina de El Sol</h1>
 
-<!-- Main navigation -->
-<nav>
-    <a href="#home">Home</a> |
-	<a href="#shopping">El Mercado (Shopping List)</a> |
-    <a href="#recipe">A Cocinar! (Let's Cook)</a> |
-    <a href="#story">De Nuestra Mesa (From Our Table)</a> 
+		<!-- Main navigation -->
+		<nav>
+    	<a href="#home">Home</a> |
+		<a href="#shopping">El Mercado (Shopping List)</a> |
+    	<a href="#recipe">A Cocinar! (Let's Cook)</a> |
+    	<a href="#story">De Nuestra Mesa (From Our Table)</a> 
 
-</nav>
-<h2>Chiles Rellenos</h2>
-<p>A Mexican Family Recipe with a Texas Story</p>
+		</nav>
+		<h2>Chiles Rellenos</h2>
+		<p>A Mexican Family Recipe with a Texas Story</p>
 
-<p class="intro">
-    This chiles rellenos recipe was passed down from my grandmother,
-    pictured below with my grandfater, my pa and my tía Maria circa 1960.
-    I learned to make it with my mother while growing up in the
-    Texas Panhandle. As the oldest of five children, I rarely had
-    my mom all to myself, but making this dish gave us time together
-    in the kitchen. Those memories are what make it one of my
-    favorite meals, and why I want to pass it down to my own family.
-</p>
+		<p class="intro">
+    	This chiles rellenos recipe was passed down from my grandmother,
+    	pictured below with my grandfater, my pa and my tía Maria circa 1960.
+   		I learned to make it with my mother while growing up in the
+    	Texas Panhandle. As the oldest of five children, I rarely had
+    	my mom all to myself, but making this dish gave us time together
+    	in the kitchen. Those memories are what make it one of my
+    	favorite meals, and why I want to pass it down to my own family.
+		</p>
 
-	<img src="familyphoto.png"
-     alt="Family portrait connected to my grandmother's recipe"
-     width="400">
+		<img src="familyphoto.png"
+     	alt="Family portrait connected to my grandmother's recipe"
+     	width="400">
 
+		<h2 id="shopping">El Mercado (Shopping List)</h2>
+		<ul>
+		<li>6 poblano peppers</li>
+		<li>1 pound ground beef</li>
+		<li>12 ounces cheddar cheese</li>
+		<li>2 garlic cloves</li>
+		<li>1/2 tbsp salt (follow your heart and season to taste)</li>
+		<li>1/2 tbsp black pepper, adjusted to taste</li>
+		<li>1/2 tbsp cumin, adjusted to taste</li>
+		<li>12 eggs, separated</li>
+		<li>1/4 cup flour (for sealing only)</li>
+		<li>One 16-oz block manteca (snow cap lard preferred) for frying</li>
+		</ul>
 
+		<h2 id="recipe">A Cocinar! (Let's Cook)</h2>
+		<ol>
+		<li>
+    	Roast the poblano peppers until the skin is blistered,
+    	being careful not to over-roast them.
 
-
-
-
-<h2 id="shopping">El Mercado (Shopping List)</h2>
-<ul>
-	<li>6 poblano peppers</li>
-	<li>1 pound ground beef</li>
-	<li>12 ounces cheddar cheese</li>
-	<li>2 garlic cloves</li>
-	<li>1/2 tbsp salt (follow your heart and season to taste)</li>
-	<li>1/2 tbsp black pepper, adjusted to taste</li>
-	<li>1/2 tbsp cumin, adjusted to taste</li>
-	<li>12 eggs, separated</li>
-	<li>1/4 cup flour (for sealing only)</li>
-	<li>One 16-oz block manteca (snow cap lard preferred) for frying</li>
-</ul>
-
-<h2 id="recipe">A Cocinar! (Let's Cook)</h2>
-<ol>
-	<li>
-    Roast the poblano peppers until the skin is blistered,
-    being careful not to over-roast them.
-
-    <!-- Expandable cooking tip -->
-    <details>
+    	<!-- Expandable cooking tip -->
+    	<details>
         <summary>💡 Tip: Keep the pepper intact</summary>
         <p>Blister the skin without letting the pepper become so soft
         that it tears when you peel or fill it.</p>
-    </details>
-</li>
-	<li>Place the roasted peppers in a produce bag with a small amount of salt and water. Close the bag and allow the peppers to steam until the skins loosen.</li>
-	<li>Remove the peppers from the bag and gently scrape away the loosened skin with a spoon.</li>
-	<li>Carefully make an opening in each pepper using the spoon edge and remove the seeds without tearing the pepper. Set the cleaned peppers aside.</li>
-	<li>Season the ground beef with garlic, salt, black pepper, and cumin and cook until the beef is completely browned. Drain the cooked beef in a colander and set it aside.</li>
-	<li>Cut the cheddar cheese into small rectangular pieces that will fit inside the poblano peppers.</li>
-	<li>Set aside a small amount of flour to use for sealing the stuffed peppers.</li>
-	<li>Hold one poblano pepper in the palm of your hand and carefully fill it with the cooked ground beef and one or two pieces of cheddar cheese.</li>
-	<li>Dip your finger into the flour and lightly apply it to one side of the opening in the pepper. Press the other side against the flour to help seal the opening. Repeat with the 	remaining peppers and set them aside.</li>
-	<li>Separate 12 eggs, placing the egg whites into a large mixing bowl and keeping the yolks separate. Be careful not to get any shells or pieces of egg membrane in the whites.</li>
-	<li>Beat the egg whites until stiff peaks form. The egg whites should be firm enough that they remain in the bowl when it is carefully turned upside down.  
+   		</details>
+		</li>
+		<li>Place the roasted peppers in a produce bag with a small amount of salt and water. Close the bag and allow the peppers to steam until the skins loosen.</li>
+		<li>Remove the peppers from the bag and gently scrape away the loosened skin with a spoon.</li>
+		<li>Carefully make an opening in each pepper using the spoon edge and remove the seeds without tearing the pepper. Set the cleaned peppers aside.</li>
+		<li>Season the ground beef with garlic, salt, black pepper, and cumin and cook until the beef is completely browned. Drain the cooked beef in a colander and set it aside.</li>
+		<li>Cut the cheddar cheese into small rectangular pieces that will fit inside the poblano peppers.</li>
+		<li>Set aside a small amount of flour to use for sealing the stuffed peppers.</li>
+		<li>Hold one poblano pepper in the palm of your hand and carefully fill it with the cooked ground beef and one or two pieces of cheddar cheese.</li>
+		<li>Dip your finger into the flour and lightly apply it to one side of the opening in the pepper. Press the other side against the flour to help seal the opening. Repeat with the 	remaining peppers and set them aside.</li>
+		<li>Separate 12 eggs, placing the egg whites into a large mixing bowl and keeping the yolks separate. Be careful not to get any shells or pieces of egg membrane in the whites.</li>
+		<li>Beat the egg whites until stiff peaks form. The egg whites should be firm enough that they remain in the bowl when it is carefully turned upside down.  
 		<!-- Expandable family tradition -->
-    <details>
+    	<details>
         <summary>❤️ Family tradition: Ojo pesado</summary>
         <p>My mother and grandmother taught me about ojo pesado,
         or “heavy gaze,” the belief that someone watching too closely
         could cause the egg batter to collapse. It is one of the
         family traditions that came with learning this recipe.</p>
-    </details>
-		 <!-- Expandable technique tip -->
-    <details>
+    	</details>
+		<!-- Expandable technique tip -->
+    	<details>
         <summary>💡 Tip: What do stiff peaks look like?</summary>
         <p>Lift the beaters out of the egg whites. The peaks should
         stand upright and hold their shape instead of folding over.</p>
-    </details>
-    </li>
-	<li>Gently fold the egg yolks into the beaten egg whites without deflating the mixture.</li>
-	<li>Heat the entire block of manteca in a large skillet until it is ready for frying.</li>
-	<li>Coat each stuffed and sealed pepper completely in the egg mixture.</li>
-	<li>Carefully place each coated pepper into the hot manteca and fry until the outside is golden brown, turning as needed so that it cooks evenly.</li>
-	<li>Remove the finished chiles rellenos from the pan and allow the excess manteca to drain.</li></ol>
+    	</details>
+    	</li>
+		<li>Gently fold the egg yolks into the beaten egg whites without deflating the mixture.</li>
+		<li>Heat the entire block of manteca in a large skillet until it is ready for frying.</li>
+		<li>Coat each stuffed and sealed pepper completely in the egg mixture.</li>
+		<li>Carefully place each coated pepper into the hot manteca and fry until the outside is golden brown, turning as needed so that it cooks evenly.</li>
+		<li>Remove the finished chiles rellenos from the pan and allow the excess manteca to drain.</li></ol>
 	
-	<h2 id="story">De Nuestra Mesa (From Our Table)</h2>
-<p>My paternal grandmother, pictured above, passed away before I was born, so I never had the chance to learn this recipe beside her. My mother grew up in a restaurant and had known my father since they were eight years old. She carried this recipe forward and began teaching me to make it when I was around ten.</p>
+		<h2 id="story">De Nuestra Mesa (From Our Table)</h2>
+		<p>My paternal grandmother, pictured above, passed away before I was born, so I never had the chance to learn this recipe beside her. My mother grew up in a restaurant and had known my father since they were eight years old. She carried this recipe forward and began teaching me to make it when I was around ten.</p>
 
-<p>We were very poor, and meat wasn’t always in the budget. On the rare occasions when we had chiles rellenos, they felt like such a special treat. My mother served them with rice and beans, without the sauce I often see served over rellenos here in Texas. She also made homemade tortillas, and we would wrap our rellenos in them.</p>
+		<p>We were very poor, and meat wasn’t always in the budget. On the rare occasions when we had chiles rellenos, they felt like such a special treat. My mother served them with rice and beans, without the sauce I often see served over rellenos here in Texas. She also made homemade tortillas, and we would wrap our rellenos in them.</p>
 
-<p>The whole house smelled indulgent. Warm tortillas, rice, beans, and the spicy scent of the rellenos filled the kitchen, with Roy Orbison singing in the background. It was magical. As the oldest of five children, I rarely had my mother all to myself. This dish took time, but that meant more time beside her, learning and listening while we cooked.</p>
+		<p>The whole house smelled indulgent. Warm tortillas, rice, beans, and the spicy scent of the rellenos filled the kitchen, with Roy Orbison singing in the background. It was magical. As the oldest of five children, I rarely had my mother all to myself. This dish took time, but that meant more time beside her, learning and listening while we cooked.</p>
 
-<p>Growing up in our tiny Texas Panhandle town in the 1970s and 1980s, we couldn’t simply walk into a grocery store and find everything we needed. Ingredients we used for Mexican rice, including consommé, bay leaves, and cumin, sometimes meant waiting for care packages from relatives in Mexico. Those packages could also include pinto beans, lentils, Mahatma jasmine rice, and dried chiles we couldn’t find locally.</p>
+		<p>Growing up in our tiny Texas Panhandle town in the 1970s and 1980s, we couldn’t simply walk into a grocery store and find everything we needed. Ingredients we used for Mexican rice, including consommé, bay leaves, and cumin, sometimes meant waiting for care packages from relatives in Mexico. Those packages could also include pinto beans, lentils, Mahatma jasmine rice, and dried chiles we couldn’t find locally.</p>
 
-<p>Our family recipe called for Mexican cheese, such as queso Oaxaca or queso Chihuahua. But if we couldn’t even find the spices, what were the chances of finding the cheeses? One thing we did have was government blocks of cheddar cheese! That became part of our version of the recipe. I’m almost fifty now, and I still think nothing compares to that cheese.</p>
+		<p>Our family recipe called for Mexican cheese, such as queso Oaxaca or queso Chihuahua. But if we couldn’t even find the spices, what were the chances of finding the cheeses? One thing we did have was government blocks of cheddar cheese! That became part of our version of the recipe. I’m almost fifty now, and I still think nothing compares to that cheese.</p>
 
-<p>I want my daughters, my sons, and my granddaughters to carry this recipe forward and make memories of their own. I hope their kitchens fill with those same wonderful smells, and that cooking together gives them the kind of time with each other that I still treasure with my mother. </p>
+		<p>I want my daughters, my sons, and my granddaughters to carry this recipe forward and make memories of their own. I hope their kitchens fill with those same wonderful smells, and that cooking together gives them the kind of time with each other that I still treasure with my mother. </p>
 	
 
 </body>
